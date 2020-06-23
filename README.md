@@ -1,6 +1,6 @@
 # ZLSudokuExercise
 
-A suduku game demo.
+A sudoku game demo.
 
 ## Example
 
