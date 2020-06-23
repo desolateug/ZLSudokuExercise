@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01P-Jb-Ci4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--出题-->
+        <scene sceneID="bD0-qm-8aS">
+            <objects>
+                <viewController id="SKv-EH-mnm" customClass="NewExerciseViewController" customModule="ZLSudokuExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9qR-1A-LpF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pG8-wd-tCF">
+                                <rect key="frame" x="0.0" y="44" width="600" height="507"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MFx-4U-aub">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="812"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0PK-jE-cya" customClass="CanvasView" customModule="ZLSudokuExercise" customModuleProvider="target">
+                                                <rect key="frame" x="12" y="12" width="576" height="576"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="1" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0PK-jE-cya" secondAttribute="height" id="Nt7-5Q-Hvl"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFs-Wc-R15">
+                                                <rect key="frame" x="150" y="722" width="300" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQ1-fX-ot2">
+                                                        <rect key="frame" x="100" y="0.0" width="100" height="40"/>
+                                                        <color key="backgroundColor" red="0.96862745100000003" green="1" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="UaE-nS-UAx"/>
+                                                            <constraint firstAttribute="height" constant="40" id="cnU-PK-t08"/>
+                                                        </constraints>
+                                                        <state key="normal" title="显示答案"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="showAnswerAction:" destination="SKv-EH-mnm" eventType="touchUpInside" id="fGy-9u-PnV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drk-9G-ayA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.96862745100000003" green="1" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Utf-WE-6fw"/>
+                                                        </constraints>
+                                                        <state key="normal" title="出题"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="exerciseAction:" destination="SKv-EH-mnm" eventType="touchUpInside" id="LDm-1M-9NI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCE-d7-W94">
+                                                        <rect key="frame" x="220" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.96862745100000003" green="1" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="kuS-XH-5HV"/>
+                                                        </constraints>
+                                                        <state key="normal" title="重置"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="resetAction:" destination="SKv-EH-mnm" eventType="touchUpInside" id="s3o-53-ihm"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="FCE-d7-W94" firstAttribute="top" secondItem="KFs-Wc-R15" secondAttribute="top" id="44T-1m-Ufd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="FCE-d7-W94" secondAttribute="trailing" id="Ei7-5X-ieH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Drk-9G-ayA" secondAttribute="bottom" id="J2O-dF-n4X"/>
+                                                    <constraint firstAttribute="bottom" secondItem="FQ1-fX-ot2" secondAttribute="bottom" id="K6u-c5-9JZ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="FCE-d7-W94" secondAttribute="bottom" id="ab7-t9-4Qw"/>
+                                                    <constraint firstItem="FCE-d7-W94" firstAttribute="leading" secondItem="FQ1-fX-ot2" secondAttribute="trailing" constant="20" id="b9k-wz-TUN"/>
+                                                    <constraint firstItem="FQ1-fX-ot2" firstAttribute="leading" secondItem="Drk-9G-ayA" secondAttribute="trailing" constant="20" id="eTt-JM-PxY"/>
+                                                    <constraint firstItem="Drk-9G-ayA" firstAttribute="top" secondItem="KFs-Wc-R15" secondAttribute="top" id="jKN-d5-6SR"/>
+                                                    <constraint firstItem="FQ1-fX-ot2" firstAttribute="top" secondItem="KFs-Wc-R15" secondAttribute="top" id="vu8-PK-Dpx"/>
+                                                    <constraint firstItem="Drk-9G-ayA" firstAttribute="leading" secondItem="KFs-Wc-R15" secondAttribute="leading" id="xUW-dF-bOm"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8p-OK-n7b" customClass="TypingNumberView" customModule="ZLSudokuExercise" customModuleProvider="target">
+                                                <rect key="frame" x="12" y="608" width="576" height="64"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="1" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="s8p-OK-n7b" secondAttribute="height" multiplier="9:1" constant="-2" id="S8E-il-Pst"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="0PK-jE-cya" secondAttribute="trailing" constant="12" id="C0h-e3-CcA"/>
+                                            <constraint firstItem="s8p-OK-n7b" firstAttribute="trailing" secondItem="0PK-jE-cya" secondAttribute="trailing" id="NSZ-zn-aDN"/>
+                                            <constraint firstItem="KFs-Wc-R15" firstAttribute="centerX" secondItem="MFx-4U-aub" secondAttribute="centerX" id="R7p-HF-rL3"/>
+                                            <constraint firstItem="s8p-OK-n7b" firstAttribute="top" secondItem="0PK-jE-cya" secondAttribute="bottom" constant="20" id="ZXb-dZ-fZL"/>
+                                            <constraint firstAttribute="bottom" secondItem="KFs-Wc-R15" secondAttribute="bottom" constant="50" id="dPl-Uo-Hb3"/>
+                                            <constraint firstItem="s8p-OK-n7b" firstAttribute="leading" secondItem="0PK-jE-cya" secondAttribute="leading" id="p4b-NK-aE2"/>
+                                            <constraint firstItem="KFs-Wc-R15" firstAttribute="top" secondItem="s8p-OK-n7b" secondAttribute="bottom" constant="50" id="pKF-RR-II1"/>
+                                            <constraint firstItem="0PK-jE-cya" firstAttribute="top" secondItem="MFx-4U-aub" secondAttribute="top" constant="12" id="qIB-PI-yZH"/>
+                                            <constraint firstItem="0PK-jE-cya" firstAttribute="leading" secondItem="MFx-4U-aub" secondAttribute="leading" constant="12" id="qw1-72-uBu"/>
+                                            <constraint firstItem="s8p-OK-n7b" firstAttribute="width" secondItem="s8p-OK-n7b" secondAttribute="height" multiplier="9:1" constant="-2" id="zIG-c8-2CF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MFx-4U-aub" firstAttribute="top" secondItem="pG8-wd-tCF" secondAttribute="top" id="CKk-7I-TVk"/>
+                                    <constraint firstAttribute="bottom" secondItem="MFx-4U-aub" secondAttribute="bottom" id="J6R-RQ-qKJ"/>
+                                    <constraint firstItem="MFx-4U-aub" firstAttribute="leading" secondItem="pG8-wd-tCF" secondAttribute="leading" id="ds2-lF-K2V"/>
+                                    <constraint firstAttribute="trailing" secondItem="MFx-4U-aub" secondAttribute="trailing" id="sOw-TW-Akk"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pG8-wd-tCF" firstAttribute="bottom" secondItem="hrl-kv-gd2" secondAttribute="bottom" id="Lb8-UP-Ltp"/>
+                            <constraint firstItem="pG8-wd-tCF" firstAttribute="top" secondItem="hrl-kv-gd2" secondAttribute="top" id="Lps-2w-blW"/>
+                            <constraint firstItem="MFx-4U-aub" firstAttribute="width" secondItem="9qR-1A-LpF" secondAttribute="width" id="Zwg-tD-8Zo"/>
+                            <constraint firstItem="hrl-kv-gd2" firstAttribute="trailing" secondItem="pG8-wd-tCF" secondAttribute="trailing" id="qhY-P5-k8N"/>
+                            <constraint firstItem="pG8-wd-tCF" firstAttribute="leading" secondItem="9qR-1A-LpF" secondAttribute="leading" id="s84-8K-RqU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hrl-kv-gd2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="出题" id="OVj-7O-MMY"/>
+                    <connections>
+                        <outlet property="canvasView" destination="0PK-jE-cya" id="Kh4-1k-bLh"/>
+                        <outlet property="typingNumberView" destination="s8p-OK-n7b" id="Zf4-V1-l6Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yFu-Ef-dbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540.57971014492762" y="113.83928571428571"/>
+        </scene>
+        <!--解题-->
+        <scene sceneID="QbA-mu-tdQ">
+            <objects>
+                <viewController id="UbV-3c-3A2" customClass="DoExerciseViewController" customModule="ZLSudokuExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6w3-6C-d8a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CYf-F1-fwt">
+                                <rect key="frame" x="0.0" y="44" width="600" height="507"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGM-UC-KFD">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="842"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxi-hW-bcm" customClass="CanvasView" customModule="ZLSudokuExercise" customModuleProvider="target">
+                                                <rect key="frame" x="12" y="12" width="576" height="576"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="1" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dxi-hW-bcm" secondAttribute="height" id="n5J-QC-kJf"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCC-13-AzK" customClass="TypingNumberView" customModule="ZLSudokuExercise" customModuleProvider="target">
+                                                <rect key="frame" x="12" y="608" width="576" height="64"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="1" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dCC-13-AzK" secondAttribute="height" multiplier="9:1" constant="-2" id="Vvf-Ww-sg7"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dov-BV-a9a">
+                                                <rect key="frame" x="160" y="722" width="280" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlU-8L-DkD">
+                                                        <rect key="frame" x="200" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.96862745100000003" green="1" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="重置"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="resetAction:" destination="UbV-3c-3A2" eventType="touchUpInside" id="Q3A-Gg-BIf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boT-Fg-ueh">
+                                                        <rect key="frame" x="100" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.96862745100000003" green="1" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="DMj-X2-JlZ"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="RKb-ky-M4g"/>
+                                                        </constraints>
+                                                        <state key="normal" title="解题"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="doAction:" destination="UbV-3c-3A2" eventType="touchUpInside" id="ltd-MC-lz1"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCz-Ui-eJT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.96862745100000003" green="1" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="清除"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="clearAction:" destination="UbV-3c-3A2" eventType="touchUpInside" id="i6D-5l-fXB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="wCz-Ui-eJT" secondAttribute="bottom" id="9w5-G2-2ig"/>
+                                                    <constraint firstItem="wCz-Ui-eJT" firstAttribute="top" secondItem="Dov-BV-a9a" secondAttribute="top" id="HD8-Xz-C8B"/>
+                                                    <constraint firstItem="dlU-8L-DkD" firstAttribute="top" secondItem="Dov-BV-a9a" secondAttribute="top" id="OS2-i2-3gg"/>
+                                                    <constraint firstItem="dlU-8L-DkD" firstAttribute="width" secondItem="boT-Fg-ueh" secondAttribute="width" id="Xv7-nl-LQ3"/>
+                                                    <constraint firstItem="boT-Fg-ueh" firstAttribute="leading" secondItem="wCz-Ui-eJT" secondAttribute="trailing" constant="20" id="YI2-I8-vmj"/>
+                                                    <constraint firstItem="boT-Fg-ueh" firstAttribute="top" secondItem="Dov-BV-a9a" secondAttribute="top" id="hOI-jg-k1a"/>
+                                                    <constraint firstItem="boT-Fg-ueh" firstAttribute="width" secondItem="wCz-Ui-eJT" secondAttribute="width" id="kdL-Oa-Imz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="boT-Fg-ueh" secondAttribute="bottom" id="o3i-qa-o46"/>
+                                                    <constraint firstItem="wCz-Ui-eJT" firstAttribute="leading" secondItem="Dov-BV-a9a" secondAttribute="leading" id="ogy-hy-0m3"/>
+                                                    <constraint firstItem="dlU-8L-DkD" firstAttribute="leading" secondItem="boT-Fg-ueh" secondAttribute="trailing" constant="20" id="vzO-Dj-Lol"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dlU-8L-DkD" secondAttribute="bottom" id="wkq-q7-I5N"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dlU-8L-DkD" secondAttribute="trailing" id="xbB-0D-f7h"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="dCC-13-AzK" firstAttribute="trailing" secondItem="dxi-hW-bcm" secondAttribute="trailing" id="6B5-XK-EBU"/>
+                                            <constraint firstAttribute="trailing" secondItem="dxi-hW-bcm" secondAttribute="trailing" constant="12" id="9UX-1h-XZJ"/>
+                                            <constraint firstItem="Dov-BV-a9a" firstAttribute="top" secondItem="dCC-13-AzK" secondAttribute="bottom" constant="50" id="D3s-li-c7J"/>
+                                            <constraint firstItem="dCC-13-AzK" firstAttribute="top" secondItem="dxi-hW-bcm" secondAttribute="bottom" constant="20" id="Hpv-6c-WIz"/>
+                                            <constraint firstItem="dxi-hW-bcm" firstAttribute="leading" secondItem="oGM-UC-KFD" secondAttribute="leading" constant="12" id="JiI-yG-RDf"/>
+                                            <constraint firstItem="dCC-13-AzK" firstAttribute="top" secondItem="dxi-hW-bcm" secondAttribute="bottom" constant="20" id="OhB-jE-nMX"/>
+                                            <constraint firstItem="Dov-BV-a9a" firstAttribute="centerX" secondItem="oGM-UC-KFD" secondAttribute="centerX" id="QXA-Cb-a0I"/>
+                                            <constraint firstItem="dCC-13-AzK" firstAttribute="leading" secondItem="dxi-hW-bcm" secondAttribute="leading" id="SPo-ov-83J"/>
+                                            <constraint firstItem="dxi-hW-bcm" firstAttribute="top" secondItem="oGM-UC-KFD" secondAttribute="top" constant="12" id="Xde-RW-a2C"/>
+                                            <constraint firstAttribute="bottom" secondItem="Dov-BV-a9a" secondAttribute="bottom" constant="80" id="uKo-lh-sru"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="oGM-UC-KFD" secondAttribute="bottom" constant="21" id="5xB-o2-SGg"/>
+                                    <constraint firstItem="oGM-UC-KFD" firstAttribute="leading" secondItem="CYf-F1-fwt" secondAttribute="leading" id="Dgb-AL-9Qb"/>
+                                    <constraint firstItem="oGM-UC-KFD" firstAttribute="top" secondItem="CYf-F1-fwt" secondAttribute="top" id="Wr6-Mq-pif"/>
+                                    <constraint firstAttribute="trailing" secondItem="oGM-UC-KFD" secondAttribute="trailing" id="Xvf-i6-Jb0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CYf-F1-fwt" firstAttribute="top" secondItem="R1Y-2f-huU" secondAttribute="top" id="IiH-7Z-mLT"/>
+                            <constraint firstItem="CYf-F1-fwt" firstAttribute="leading" secondItem="R1Y-2f-huU" secondAttribute="leading" id="Pk9-Yu-Rk9"/>
+                            <constraint firstItem="CYf-F1-fwt" firstAttribute="trailing" secondItem="R1Y-2f-huU" secondAttribute="trailing" id="QlL-oz-p4G"/>
+                            <constraint firstItem="CYf-F1-fwt" firstAttribute="bottom" secondItem="R1Y-2f-huU" secondAttribute="bottom" id="fLb-XT-QLh"/>
+                            <constraint firstItem="oGM-UC-KFD" firstAttribute="width" secondItem="6w3-6C-d8a" secondAttribute="width" id="zTB-an-RcE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R1Y-2f-huU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="解题" id="VHK-vU-j1N"/>
+                    <connections>
+                        <outlet property="canvasView" destination="dxi-hW-bcm" id="WFj-4j-3kC"/>
+                        <outlet property="typingNumberView" destination="dCC-13-AzK" id="tt4-Rk-xz5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhs-e1-Edd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540.57971014492762" y="-534.375"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RdA-fC-SfP">
+            <objects>
+                <tabBarController id="01P-Jb-Ci4" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PeF-p0-VY6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hlI-Ws-1Cg" kind="relationship" relationship="viewControllers" id="kmO-bI-QG9"/>
+                        <segue destination="JXH-Lc-G6d" kind="relationship" relationship="viewControllers" id="Rld-tz-0Wg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfk-lz-gnl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1286" y="-210"/>
+        </scene>
+        <!--解题-->
+        <scene sceneID="xXY-i7-q5E">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hlI-Ws-1Cg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="解题" image="square.and.arrow.up" catalog="system" selectedImage="square.and.arrow.up.fill" id="54s-sb-Nd5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xrx-eb-Vkc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UbV-3c-3A2" kind="relationship" relationship="rootViewController" id="B7p-TX-UNy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFG-g4-p79" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368.11594202898556" y="-534.375"/>
+        </scene>
+        <!--出题-->
+        <scene sceneID="yVG-lr-q2a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JXH-Lc-G6d" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="出题" image="square.and.arrow.down" catalog="system" selectedImage="square.and.arrow.down.fill" id="bea-DH-AOs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A7w-kk-iRR">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SKv-EH-mnm" kind="relationship" relationship="rootViewController" id="Ncs-9h-V0Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGn-1V-psv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368.11594202898556" y="113.83928571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.down" catalog="system" width="60" height="64"/>
+        <image name="square.and.arrow.down.fill" catalog="system" width="60" height="64"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="56" height="64"/>
+    </resources>
+</document>

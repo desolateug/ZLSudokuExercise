@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D6FFCEA11C049B6220E68D1 /* libPods-ZLSudokuExercise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C24EA3C0C0A1B241A2063B /* libPods-ZLSudokuExercise.a */; };
+		5C0AC019240F7E85002DAC32 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AC018240F7E85002DAC32 /* HUD.swift */; };
+		5C0AC01B240F8994002DAC32 /* ExerciseMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AC01A240F8994002DAC32 /* ExerciseMaker.swift */; };
+		5C0E7CC8240D09EA00DF9801 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E7CC7240D09EA00DF9801 /* Sample.swift */; };
+		5C0E7CCA240D0BC200DF9801 /* CanvasViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E7CC9240D0BC200DF9801 /* CanvasViewCell.swift */; };
+		5C0E7CCE240E2CA900DF9801 /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E7CCD240E2CA900DF9801 /* UIColor+Ex.swift */; };
+		5C0E7CD0240E47BE00DF9801 /* TypingNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E7CCF240E47BE00DF9801 /* TypingNumberView.swift */; };
+		5C0E7CD2240E489100DF9801 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E7CD1240E489100DF9801 /* GridView.swift */; };
+		5C0E7CD4240E5F0900DF9801 /* ExerciseCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E7CD3240E5F0900DF9801 /* ExerciseCalculator.swift */; };
+		5C5E0C23240E62920013690C /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5E0C22240E62920013690C /* Exercise.swift */; };
+		5CABCEE72417332100A92135 /* CalculatorMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CABCEE62417332100A92135 /* CalculatorMatrix.swift */; };
+		5CABCEEA241733BD00A92135 /* IndexPath+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CABCEE9241733BD00A92135 /* IndexPath+Ex.swift */; };
+		5CC59819240D0192008D5368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC59818240D0192008D5368 /* AppDelegate.swift */; };
+		5CC5981B240D0192008D5368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5981A240D0192008D5368 /* SceneDelegate.swift */; };
+		5CC59820240D0192008D5368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC5981E240D0192008D5368 /* Main.storyboard */; };
+		5CC59822240D0192008D5368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC59821240D0192008D5368 /* Assets.xcassets */; };
+		5CC59825240D0192008D5368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC59823240D0192008D5368 /* LaunchScreen.storyboard */; };
+		5CC59832240D0695008D5368 /* DoExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC59831240D0695008D5368 /* DoExerciseViewController.swift */; };
+		5CC59834240D06A6008D5368 /* NewExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC59833240D06A6008D5368 /* NewExerciseViewController.swift */; };
+		5CC59838240D071C008D5368 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC59837240D071C008D5368 /* CanvasView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55AD8939B8494BCBEAFCEB88 /* Pods-ZLSudokuExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLSudokuExercise.debug.xcconfig"; path = "Target Support Files/Pods-ZLSudokuExercise/Pods-ZLSudokuExercise.debug.xcconfig"; sourceTree = "<group>"; };
+		5C0AC018240F7E85002DAC32 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		5C0AC01A240F8994002DAC32 /* ExerciseMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseMaker.swift; sourceTree = "<group>"; };
+		5C0E7CC7240D09EA00DF9801 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		5C0E7CC9240D0BC200DF9801 /* CanvasViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewCell.swift; sourceTree = "<group>"; };
+		5C0E7CCD240E2CA900DF9801 /* UIColor+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
+		5C0E7CCF240E47BE00DF9801 /* TypingNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingNumberView.swift; sourceTree = "<group>"; };
+		5C0E7CD1240E489100DF9801 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		5C0E7CD3240E5F0900DF9801 /* ExerciseCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCalculator.swift; sourceTree = "<group>"; };
+		5C5E0C22240E62920013690C /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		5CABCEE62417332100A92135 /* CalculatorMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorMatrix.swift; sourceTree = "<group>"; };
+		5CABCEE9241733BD00A92135 /* IndexPath+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexPath+Ex.swift"; sourceTree = "<group>"; };
+		5CC59815240D0192008D5368 /* ZLSudokuExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZLSudokuExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC59818240D0192008D5368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CC5981A240D0192008D5368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5CC5981F240D0192008D5368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CC59821240D0192008D5368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CC59824240D0192008D5368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CC59826240D0192008D5368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CC59831240D0695008D5368 /* DoExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoExerciseViewController.swift; sourceTree = "<group>"; };
+		5CC59833240D06A6008D5368 /* NewExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExerciseViewController.swift; sourceTree = "<group>"; };
+		5CC59837240D071C008D5368 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		82C24EA3C0C0A1B241A2063B /* libPods-ZLSudokuExercise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZLSudokuExercise.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA3AE5BDE2AF4F33BB2F771 /* Pods-ZLSudokuExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLSudokuExercise.release.xcconfig"; path = "Target Support Files/Pods-ZLSudokuExercise/Pods-ZLSudokuExercise.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CC59812240D0192008D5368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D6FFCEA11C049B6220E68D1 /* libPods-ZLSudokuExercise.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C0E7CC6240D099F00DF9801 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E7CC7240D09EA00DF9801 /* Sample.swift */,
+				5C5E0C22240E62920013690C /* Exercise.swift */,
+				5CABCEE9241733BD00A92135 /* IndexPath+Ex.swift */,
+				5CABCEE82417338400A92135 /* Caculator */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C0E7CCC240E2C8500DF9801 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E7CCD240E2CA900DF9801 /* UIColor+Ex.swift */,
+				5C0AC018240F7E85002DAC32 /* HUD.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5CABCEE82417338400A92135 /* Caculator */ = {
+			isa = PBXGroup;
+			children = (
+				5CABCEE62417332100A92135 /* CalculatorMatrix.swift */,
+				5C0E7CD3240E5F0900DF9801 /* ExerciseCalculator.swift */,
+				5C0AC01A240F8994002DAC32 /* ExerciseMaker.swift */,
+			);
+			path = Caculator;
+			sourceTree = "<group>";
+		};
+		5CC5980C240D0192008D5368 = {
+			isa = PBXGroup;
+			children = (
+				5CC59817240D0192008D5368 /* ZLSudokuExercise */,
+				5CC59816240D0192008D5368 /* Products */,
+				DF7D64E97FA615ADDAEE430E /* Pods */,
+				E658EE55FB825F3E547894D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5CC59816240D0192008D5368 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CC59815240D0192008D5368 /* ZLSudokuExercise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CC59817240D0192008D5368 /* ZLSudokuExercise */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5982C240D031A008D5368 /* Class */,
+				5CC59818240D0192008D5368 /* AppDelegate.swift */,
+				5CC5981A240D0192008D5368 /* SceneDelegate.swift */,
+				5CC5981E240D0192008D5368 /* Main.storyboard */,
+				5CC59821240D0192008D5368 /* Assets.xcassets */,
+				5CC59823240D0192008D5368 /* LaunchScreen.storyboard */,
+				5CC59826240D0192008D5368 /* Info.plist */,
+			);
+			path = ZLSudokuExercise;
+			sourceTree = "<group>";
+		};
+		5CC5982C240D031A008D5368 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E7CCC240E2C8500DF9801 /* Base */,
+				5C0E7CC6240D099F00DF9801 /* Model */,
+				5CC59835240D06C4008D5368 /* View */,
+				5CC59836240D06CD008D5368 /* ViewController */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5CC5982D240D0616008D5368 /* DoExercise */ = {
+			isa = PBXGroup;
+			children = (
+				5CC59831240D0695008D5368 /* DoExerciseViewController.swift */,
+			);
+			path = DoExercise;
+			sourceTree = "<group>";
+		};
+		5CC59830240D063D008D5368 /* NewExercise */ = {
+			isa = PBXGroup;
+			children = (
+				5CC59833240D06A6008D5368 /* NewExerciseViewController.swift */,
+			);
+			path = NewExercise;
+			sourceTree = "<group>";
+		};
+		5CC59835240D06C4008D5368 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E7CD1240E489100DF9801 /* GridView.swift */,
+				5CC59837240D071C008D5368 /* CanvasView.swift */,
+				5C0E7CC9240D0BC200DF9801 /* CanvasViewCell.swift */,
+				5C0E7CCF240E47BE00DF9801 /* TypingNumberView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CC59836240D06CD008D5368 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5982D240D0616008D5368 /* DoExercise */,
+				5CC59830240D063D008D5368 /* NewExercise */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DF7D64E97FA615ADDAEE430E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55AD8939B8494BCBEAFCEB88 /* Pods-ZLSudokuExercise.debug.xcconfig */,
+				FFA3AE5BDE2AF4F33BB2F771 /* Pods-ZLSudokuExercise.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E658EE55FB825F3E547894D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82C24EA3C0C0A1B241A2063B /* libPods-ZLSudokuExercise.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CC59814240D0192008D5368 /* ZLSudokuExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CC59829240D0192008D5368 /* Build configuration list for PBXNativeTarget "ZLSudokuExercise" */;
+			buildPhases = (
+				9172F524882256F196BA8DE1 /* [CP] Check Pods Manifest.lock */,
+				5CC59811240D0192008D5368 /* Sources */,
+				5CC59812240D0192008D5368 /* Frameworks */,
+				5CC59813240D0192008D5368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZLSudokuExercise;
+			productName = ZLSudokuExercise;
+			productReference = 5CC59815240D0192008D5368 /* ZLSudokuExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CC5980D240D0192008D5368 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = zlj;
+				TargetAttributes = {
+					5CC59814240D0192008D5368 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5CC59810240D0192008D5368 /* Build configuration list for PBXProject "ZLSudokuExercise" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CC5980C240D0192008D5368;
+			productRefGroup = 5CC59816240D0192008D5368 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CC59814240D0192008D5368 /* ZLSudokuExercise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CC59813240D0192008D5368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC59825240D0192008D5368 /* LaunchScreen.storyboard in Resources */,
+				5CC59822240D0192008D5368 /* Assets.xcassets in Resources */,
+				5CC59820240D0192008D5368 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9172F524882256F196BA8DE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZLSudokuExercise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CC59811240D0192008D5368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0E7CD0240E47BE00DF9801 /* TypingNumberView.swift in Sources */,
+				5C0E7CCE240E2CA900DF9801 /* UIColor+Ex.swift in Sources */,
+				5C5E0C23240E62920013690C /* Exercise.swift in Sources */,
+				5C0AC019240F7E85002DAC32 /* HUD.swift in Sources */,
+				5CC59819240D0192008D5368 /* AppDelegate.swift in Sources */,
+				5CC59834240D06A6008D5368 /* NewExerciseViewController.swift in Sources */,
+				5CABCEE72417332100A92135 /* CalculatorMatrix.swift in Sources */,
+				5CABCEEA241733BD00A92135 /* IndexPath+Ex.swift in Sources */,
+				5C0E7CC8240D09EA00DF9801 /* Sample.swift in Sources */,
+				5CC59838240D071C008D5368 /* CanvasView.swift in Sources */,
+				5CC5981B240D0192008D5368 /* SceneDelegate.swift in Sources */,
+				5C0AC01B240F8994002DAC32 /* ExerciseMaker.swift in Sources */,
+				5CC59832240D0695008D5368 /* DoExerciseViewController.swift in Sources */,
+				5C0E7CD4240E5F0900DF9801 /* ExerciseCalculator.swift in Sources */,
+				5C0E7CD2240E489100DF9801 /* GridView.swift in Sources */,
+				5C0E7CCA240D0BC200DF9801 /* CanvasViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5CC5981E240D0192008D5368 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CC5981F240D0192008D5368 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CC59823240D0192008D5368 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CC59824240D0192008D5368 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CC59827240D0192008D5368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CC59828240D0192008D5368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CC5982A240D0192008D5368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55AD8939B8494BCBEAFCEB88 /* Pods-ZLSudokuExercise.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23MZD6RGW7;
+				INFOPLIST_FILE = ZLSudokuExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zlj.ZLSudokuExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CC5982B240D0192008D5368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFA3AE5BDE2AF4F33BB2F771 /* Pods-ZLSudokuExercise.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23MZD6RGW7;
+				INFOPLIST_FILE = ZLSudokuExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zlj.ZLSudokuExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CC59810240D0192008D5368 /* Build configuration list for PBXProject "ZLSudokuExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CC59827240D0192008D5368 /* Debug */,
+				5CC59828240D0192008D5368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CC59829240D0192008D5368 /* Build configuration list for PBXNativeTarget "ZLSudokuExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CC5982A240D0192008D5368 /* Debug */,
+				5CC5982B240D0192008D5368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CC5980D240D0192008D5368 /* Project object */;
+}
